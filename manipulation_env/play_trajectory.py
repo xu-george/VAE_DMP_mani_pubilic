@@ -24,7 +24,7 @@ gripper_offset = -0.03
 trajectories = []
 task_ids = []
 for file in os.listdir(dict_name):
-    if file.endswith("place_data.npy"):
+    if file.endswith(".npy"):
         file_name = os.path.join(dict_name, file)
         
         data = np.load(file_name, allow_pickle=True)
